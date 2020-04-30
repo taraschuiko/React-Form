@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Message = () => {
+const Message = ({isFormValid}) => {
     return (
         <div>
-            <h3 className="text-center message"></h3>
+            <h3 className="text-center message">{
+                isFormValid ? "Form is Complete!" : "Form is Incomplete!"
+            }</h3>
         </div>
     )
 }
